@@ -1,4 +1,4 @@
-const getPokemonUrl = id => `https://pokeapi.co/api/v2/pokemon/${id}`
+const getPokemonUrl = id => `https://pokeapi.co/api/v2/pokemon-form/${id}`
 
 const generatePokemonPromises = () => Array(800).fill().map((_, index) => fetch(getPokemonUrl(index + 1)).then(res => res.json()))
 
