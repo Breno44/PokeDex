@@ -6,7 +6,7 @@ const generateHTML = pokemons => pokemons.reduce((acc, pokemon) => {
 const types = pokemon.types.map(typeInfo => typeInfo.type.name)
 acc += `
     <li class="card ${types[0]}">
-        <img class="card-image" alt="${pokemon.name}" src="https://pokeres.bastionbot.org/images/pokemon/${pokemon.id}.png" />
+        <img class="card-image" alt="${pokemon.name}" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pokemon.id}.png" />
         <h2 class="card-title">${pokemon.id}. ${pokemon.name}</h2>
         <p class="card-subtitle">${types.join(' | ')}</p>
     </li>`
